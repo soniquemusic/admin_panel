@@ -17,7 +17,7 @@ const AdminListSong = ({ isLightMode = false }) => {
     }
 
     try {
-      const response = await fetch('https://admin-panel-five-woad.vercel.app/api/song/get-song'); // Ensure this URL is correct
+      const response = await fetch('https://sonique-server.onrender.com/sonique/song/get-song');
       if (!response.ok) {
         throw new Error('Failed to fetch songs');
       }
@@ -26,7 +26,6 @@ const AdminListSong = ({ isLightMode = false }) => {
       setCachedSongs(data.songs); // Cache the songs
     } catch (error) {
       console.error('Error fetching songs:', error);
-      alert('There was an issue fetching the song data. Please try again later.');
     } finally {
       setLoading(false);
     }
@@ -48,7 +47,7 @@ const AdminListSong = ({ isLightMode = false }) => {
   const handleDelete = async (songId, songTitle) => {
     if (window.confirm(`Are you sure you want to delete "${songTitle}"?`)) {
       try {
-        const response = await fetch(`https://admin-panel-five-woad.vercel.app/api/song/delete-song/${songId}`, {
+        const response = await fetch(`https://sonique-server.onrender.com/sonique/song/delete-song/${songId}`, {
           method: "DELETE",
         });
 
