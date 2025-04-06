@@ -17,7 +17,7 @@ const AdminListSong = ({ isLightMode = false }) => {
     }
 
     try {
-      const response = await fetch('http://localhost:3000/sonique/song/get-song');
+      const response = await fetch('https://sonique-server.onrender.com/sonique/song/get-song');
       if (!response.ok) {
         throw new Error('Failed to fetch songs');
       }
@@ -47,7 +47,7 @@ const AdminListSong = ({ isLightMode = false }) => {
   const handleDelete = async (songId, songTitle) => {
     if (window.confirm(`Are you sure you want to delete "${songTitle}"?`)) {
       try {
-        const response = await fetch(`http://localhost:3000/sonique/song/delete-song/${songId}`, {
+        const response = await fetch(`https://sonique-server.onrender.com/sonique/song/delete-song/${songId}`, {
           method: "DELETE",
         });
 
