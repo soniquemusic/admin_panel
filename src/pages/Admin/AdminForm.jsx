@@ -41,8 +41,8 @@ function AdminForm({ isLightMode }) {
         const fetchData = async () => {
             try {
                 // Fetch Authors and Albums concurrently
-                const authorsResponse = axios.get('http://localhost:3000/sonique/author/get-authors');
-                const albumsResponse = axios.get('http://localhost:3000/sonique/album/get-album');
+                const authorsResponse = axios.get('https://sonique-server.onrender.com/sonique/author/get-authors');
+                const albumsResponse = axios.get('https://sonique-server.onrender.com/sonique/album/get-album');
 
                 const [authorsRes, albumsRes] = await Promise.all([authorsResponse, albumsResponse]);
 
@@ -162,7 +162,7 @@ function AdminForm({ isLightMode }) {
         setLoading(true);
 
         try {
-            const response = await axios.post('http://localhost:3000/sonique/song/create-song', formDataToSend, {
+            const response = await axios.post('https://sonique-server.onrender.com/sonique/song/create-song', formDataToSend, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
                 },

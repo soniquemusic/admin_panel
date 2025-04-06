@@ -16,7 +16,7 @@ const AdminListAuthor = ({ isLightMode = false }) => {
     }
 
     try {
-      const response = await fetch('http://localhost:3000/sonique/author/get-authors');
+      const response = await fetch('https://sonique-server.onrender.com/sonique/author/get-authors');
       const data = await response.json();
 
       if (response.ok) {
@@ -35,7 +35,7 @@ const AdminListAuthor = ({ isLightMode = false }) => {
   const handleDelete = async (authorId, authorName) => {
     if (window.confirm(`Are you sure you want to delete ${authorName}?`)) {
       try {
-        const response = await fetch(`http://localhost:3000/sonique/author/delete-author/${authorId}`, {
+        const response = await fetch(`https://sonique-server.onrender.com/sonique/author/delete-author/${authorId}`, {
           method: "DELETE",
         });
 

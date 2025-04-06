@@ -17,7 +17,7 @@ const AdminListA = ({ isLightMode = false }) => {
     }
 
     try {
-      const response = await fetch('http://localhost:3000/sonique/album/get-album');
+      const response = await fetch('https://sonique-server.onrender.com/sonique/album/get-album');
       const data = await response.json();
 
       if (response.ok) {
@@ -45,7 +45,7 @@ const AdminListA = ({ isLightMode = false }) => {
   const handleDelete = async (albumId, albumName) => {
     if (window.confirm(`Are you sure you want to delete ${albumName}?`)) {
       try {
-        const response = await fetch(`http://localhost:3000/sonique/album/delete-album/${albumId}`, {
+        const response = await fetch(`https://sonique-server.onrender.com/sonique/album/delete-album/${albumId}`, {
           method: 'DELETE',
         });
 

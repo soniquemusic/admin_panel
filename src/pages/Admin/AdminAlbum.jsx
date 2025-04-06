@@ -65,7 +65,7 @@ function AdminAlbum({ isLightMode = false }) {
     setLoading(true);
 
     try {
-      const response = await axios.post("http://localhost:3000/sonique/album/create-album", formData, {
+      const response = await axios.post("https://sonique-server.onrender.com/sonique/album/create-album", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },

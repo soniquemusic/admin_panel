@@ -75,7 +75,7 @@ function AdminAuthor({ isLightMode = false }) {
 
     try {
       const response = await axios.post(
-        "http://localhost:3000/sonique/author/create-author",
+        "https://sonique-server.onrender.com/sonique/author/create-author",
         formData,
         {
           headers: {
