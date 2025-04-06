@@ -54,7 +54,7 @@ const AdminLogin = () => {
         <div
           className="w-full h-full bg-cover bg-center"
           style={{
-            backgroundImage: "url('../../../public/bg4.jpg')",
+            backgroundImage: "url('../../../public/back_ground.jpg')",
           }}
         ></div>
       </div>
@@ -63,7 +63,7 @@ const AdminLogin = () => {
         <div className="max-w-md w-full p-8">
           <h1 className="text-3xl text-purple-500 font-bold text-center mb-6">
             <img
-              src="../../../public/lightened_logo.png"
+              src="../../../public/ligh_logo.png"
               alt="logo"
               className="w-44 h-auto mx-auto sm:w-44 md:w-48 lg:w-56"
             />

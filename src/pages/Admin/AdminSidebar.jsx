@@ -18,7 +18,7 @@ function AdminSidebar({ isOpen, isLightMode }) {
             ${isOpen ? 'translate-x-0' : '-translate-x-full'} md:translate-x-0 transition-transform duration-200 ease-in-out shadow-xl`}
             style={sidebarStyles}
         >
-            <img src="/lightened_logo.png" alt="Logo" className="w-40" />
+            <img src="/ligh_logo.png" alt="Logo" className="w-40" />
             <nav className="space-y-2">
             <NavItem icon={<FaMusic />} text="Add Song" to="/" isLightMode={isLightMode} style={navItemStyles} />
                 <NavItem icon={<FaList />} text="List Song" to="/list/song" isLightMode={isLightMode} style={navItemStyles} />
