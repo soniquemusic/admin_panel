@@ -17,7 +17,7 @@ const AdminListA = ({ isLightMode = false }) => {
     }
 
     try {
-      const response = await fetch('http://localhost:3000/sonique/album/get-album');
+      const response = await fetch('https://sonique-server.onrender.com/sonique/album/get-album');
       const data = await response.json();
 
       if (response.ok) {
