@@ -23,7 +23,7 @@ const AdminLogin = () => {
     }
 
     try {
-      const response = await axios.post('http://localhost:3000/sonique/user/login', { email, password });
+      const response = await axios.post('https://sonique-server.onrender.com/sonique/user/login', { email, password });
 
       const { token, user } = response.data;
 
