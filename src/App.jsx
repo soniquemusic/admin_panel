@@ -3,6 +3,7 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import AdminHome from './pages/Admin/AdminHome';
 import AdminLogin from './pages/Admin/AdminLogin';
+import { Toaster } from 'react-hot-toast';
 
 function App() {
 
@@ -11,8 +12,8 @@ function App() {
       <Routes>
         <Route path="/*" element={<AdminHome />} />
         <Route path="/sonique/user/login" element={<AdminLogin />} />
-        
       </Routes>
+      <Toaster />
     </>
   )
 }

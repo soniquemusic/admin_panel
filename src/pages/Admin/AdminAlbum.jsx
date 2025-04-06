@@ -1,7 +1,7 @@
 import React, { useState, useRef, useCallback } from "react";
 import { FaImage } from "react-icons/fa";
 import axios from "axios";
-import toast, { Toaster } from 'react-hot-toast';
+import toast from 'react-hot-toast';
 
 function AdminAlbum({ isLightMode = false }) {
   const [albumName, setAlbumName] = useState("");
@@ -159,7 +159,6 @@ function AdminAlbum({ isLightMode = false }) {
           </button>
         </form>
       </div>
-      <Toaster />
     </div>
   );
 }

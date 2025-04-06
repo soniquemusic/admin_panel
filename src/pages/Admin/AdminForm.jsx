@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { FaImage, FaMusic } from 'react-icons/fa';
 import axios from 'axios';
-import toast, { Toaster } from 'react-hot-toast';
+import toast from 'react-hot-toast';
 import { useNavigate } from 'react-router-dom';
 
 function AdminForm({ isLightMode }) {
@@ -340,7 +340,6 @@ function AdminForm({ isLightMode }) {
                     </button>
                 </form>
             </div>
-            <Toaster />
         </div>
     );
 }

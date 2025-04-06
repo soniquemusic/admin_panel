@@ -1,7 +1,7 @@
 import React, { useState, useCallback } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import { toast } from 'react-hot-toast'; // Importing toast
+import { toast } from 'react-hot-toast';
 import bgimg from '../../../public/back_ground.jpg';
 import logo from '/ligh_logo.png';
 

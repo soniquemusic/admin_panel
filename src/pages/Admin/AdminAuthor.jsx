@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import { FaImage } from "react-icons/fa";
 import axios from "axios";
-import toast, { Toaster } from "react-hot-toast";
+import toast from "react-hot-toast";
 
 function AdminAuthor({ isLightMode = false }) {
   const [authorName, setAuthorName] = useState("");
@@ -183,7 +183,6 @@ function AdminAuthor({ isLightMode = false }) {
           </button>
         </form>
       </div>
-      <Toaster />
     </div>
   );
 }
