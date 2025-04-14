@@ -96,7 +96,7 @@ const AdminLogin = () => {
               className="w-full bg-[#405852] text-black font-semibold py-2 rounded-lg"
               disabled={loading}
             >
-              {loading ? 'Logging in...' : 'Login'}
+              {loading ? 'Login in...' : 'Login'}
             </button>
             <p className="text-gray-400 text-sm text-center mt-4">
               Admin only for login.
